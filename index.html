@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monster hunter wilds: Bestiario">
+    <meta name="author" content="Martín Rosales Soto">
+    <title>Bestiario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header id="inicio" class="hero">
+        <img src="imagenes/Monster-Hunter-2004-Logo.png" alt="Logo Monster Hunter" width="250" height="200">
+        <h1>BESTIARIO</h1>
+        <p>Monstruos de las Tierras Prohibidas</p>
+    </header>
+
+    <main id="bestiario" class="bestiario">
+        <input class="tab-input" type="radio" name="categoria" id="tab-todos" checked>
+        <input class="tab-input" type="radio" name="categoria" id="tab-volador">
+        <input class="tab-input" type="radio" name="categoria" id="tab-pajaro">
+        <input class="tab-input" type="radio" name="categoria" id="tab-bruto">
+        <input class="tab-input" type="radio" name="categoria" id="tab-colmillos">
+        <input class="tab-input" type="radio" name="categoria" id="tab-leviatan">
+        <input class="tab-input" type="radio" name="categoria" id="tab-temnoceran">
+        <input class="tab-input" type="radio" name="categoria" id="tab-anfibio">
+        <input class="tab-input" type="radio" name="categoria" id="tab-cefalopodo">
+        <input class="tab-input" type="radio" name="categoria" id="tab-constructo">
+        <input class="tab-input" type="radio" name="categoria" id="tab-anciano">
+        <input class="tab-input" type="radio" name="categoria" id="tab-otros">
+
+        <nav class="tabs" aria-label="Categorías del bestiario">
+            <label class="tab" for="tab-todos">Todos</label>
+            <label class="tab" for="tab-volador">Wyverns voladores</label>
+            <label class="tab" for="tab-pajaro">Wyverns pájaro</label>
+            <label class="tab" for="tab-bruto">Wyverns brutos</label>
+            <label class="tab" for="tab-colmillos">Bestias de colmillos</label>
+            <label class="tab" for="tab-leviatan">Leviatanes</label>
+            <label class="tab" for="tab-temnoceran">Temnoceran</label>
+            <label class="tab" for="tab-anfibio">Anfibios</label>
+            <label class="tab" for="tab-cefalopodo">Cefalópodos</label>
+            <label class="tab" for="tab-constructo">Constructos</label>
+            <label class="tab" for="tab-anciano">Dragones ancianos</label>
+            <label class="tab" for="tab-otros">???</label>
+        </nav>
+
+        <div class="tab-panels">
+            <section id="panel-todos" class="tab-panel" aria-label="Todos los monstruos">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#rathalos"><img src="imagenes/Rathalo.png" alt="Rathalos"><span>Rathalos</span></a>
+                    <a class="monster-card" href="#rathian"><img src="imagenes/Rathian.png" alt="Rathian"><span>Rathian</span></a>
+                    <a class="monster-card" href="#seregios"><img src="imagenes/Seregios.png" alt="Seregios"><span>Seregios</span></a>
+                    <a class="monster-card" href="#gravios"><img src="imagenes/Gravios.png" alt="Gravios"><span>Gravios</span></a>
+                    <a class="monster-card" href="#blangonga"><img src="imagenes/Blangonga.png" alt="Blangonga"><span>Blangonga</span></a>
+                    <a class="monster-card" href="#nerscylla"><img src="imagenes/Nerscylla.png" alt="Nerscylla"><span>Nerscylla</span></a>
+                    <a class="monster-card" href="#uth-duna"><img src="imagenes/Uth_Duna_Icon.png" alt="Uth Duna"><span>Uth Duna</span></a>
+                    <a class="monster-card" href="#lala-barina"><img src="imagenes/lala_barina_icon.png" alt="Lala Barina"><span>Lala Barina</span></a>
+                    <a class="monster-card" href="#gore-magala"><img src="imagenes/Gore_Magala_icon.png" alt="Gore Magala"><span>Gore Magala</span></a>
+                    <a class="monster-card" href="#lagiacrus"><img src="imagenes/Lagiacrus_icon.png" alt="Lagiacrus"><span>Lagiacrus</span></a>
+                    <a class="monster-card" href="#congalala"><img src="imagenes/Congalala_icon.png" alt="Congalala"><span>Congalala</span></a>
+                    <a class="monster-card" href="#jin-dahaad"><img src="imagenes/Dahaad_icon.png" alt="Jin Dahaad"><span>Jin Dahaad</span></a>
+                    <a class="monster-card" href="#mizutsune"><img src="imagenes/Mizutsune_icon.png" alt="Mizutsune"><span>Mizutsune</span></a>
+                    <a class="monster-card" href="#ajarakan"><img src="imagenes/Ajarakan_icon.png" alt="Ajarakan"><span>Ajarakan</span></a>
+                    <a class="monster-card" href="#nu-udra"><img src="imagenes/Nu_Udra_icon.png" alt="Nu Udra"><span>Nu Udra</span></a>
+                    <a class="monster-card" href="#rompopolo"><img src="imagenes/Rompopolo_icon.png" alt="Rompopolo"><span>Rompopolo</span></a>
+                    <a class="monster-card" href="#rey-dau"><img src="imagenes/Rey_Dau_icon.png" alt="Rey Dau"><span>Rey Dau</span></a>
+                    <a class="monster-card" href="#xu-wu"><img src="imagenes/Xu_Wu_icon.png" alt="Xu Wu"><span>Xu Wu</span></a>
+                    <a class="monster-card" href="#arkveld"><img src="imagenes/Arkveld_icon.png" alt="Arkveld"><span>Arkveld</span></a>
+                    <a class="monster-card" href="#chatacabra"><img src="imagenes/Chatacabra_icon.png" alt="Chatacabra"><span>Chatacabra</span></a>
+                    <a class="monster-card" href="#balahara"><img src="imagenes/Balahara_icon.png" alt="Balahara"><span>Balahara</span></a>
+                    <a class="monster-card" href="#quematrice"><img src="imagenes/Quematrice_Icon.png" alt="Quematrice"><span>Quematrice</span></a>
+                    <a class="monster-card" href="#doshaguma"><img src="imagenes/Doshaguma_Icon.png" alt="Doshaguma"><span>Doshaguma</span></a>
+                    <a class="monster-card" href="#gypceros"><img src="imagenes/Gypceros_Icon.png" alt="Gypceros"><span>Gypceros</span></a>
+                    <a class="monster-card" href="#hirabami"><img src="imagenes/Hirabami_Icon.png" alt="Hirabami"><span>Hirabami</span></a>
+                    <a class="monster-card" href="#yian-kut-ku"><img src="imagenes/Kut-Ku_Icon.png" alt="Yian kut-ku"><span>Yian kut-ku</span></a>
+                    <a class="monster-card" href="#anjanath-fulgureo-guardian"><img src="imagenes/Guardian_Fulgur_Anjanath_Icon.png" alt="Anjanath Fulgúreo Guardián"><span>Anjanath Fulgúreo Guardián</span></a>
+                    <a class="monster-card" href="#odogaron-ebano-guardian"><img src="imagenes/Odogaron_Icon.png" alt="Odogaron Ébano Guardián"><span>Odogaron Ébano Guardián</span></a>
+                    <a class="monster-card" href="#doshaguma-guardian"><img src="imagenes/Guardian_Doshaguma_Icon.png" alt="Doshaguma Guardián"><span>Doshaguma Guardián</span></a>
+                    <a class="monster-card" href="#rathalos-guardian"><img src="imagenes/Guardian_Rathalos_Icon.png" alt="Rathalos Guardián"><span>Rathalos Guardián</span></a>
+                    <a class="monster-card" href="#arkveld-guardian"><img src="imagenes/Arkveld_Guardian_Icon.png" alt="Arkveld Guardián"><span>Arkveld Guardián</span></a>
+                    <a class="monster-card" href="#zoh-shia"><img src="imagenes/Zoh_Shia_Icon.png" alt="Zoh Shia"><span>Zoh Shia</span></a>
+                    <a class="monster-card" href="#gogmazios"><img src="imagenes/Gogmazios_Icon.png" alt="Gogmazios"><span>Gogmazios</span></a>
+                    <a class="monster-card" href="#omega-planetes"><img src="imagenes/Omega_Planetes_Icon.png" alt="Omega Planetes"><span>Omega Planetes</span></a>
+                </div>
+            </section>
+            <section id="panel-volador" class="tab-panel" aria-label="Wyverns voladores">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#rathalos"><img src="imagenes/Rathalo.png" alt="Rathalos"><span>Rathalos</span></a>
+                    <a class="monster-card" href="#rathian"><img src="imagenes/Rathian.png" alt="Rathian"><span>Rathian</span></a>
+                    <a class="monster-card" href="#seregios"><img src="imagenes/Seregios.png" alt="Seregios"><span>Seregios</span></a>
+                    <a class="monster-card" href="#gravios"><img src="imagenes/Gravios.png" alt="Gravios"><span>Gravios</span></a>
+                    <a class="monster-card" href="#rey-dau"><img src="imagenes/Rey_Dau_icon.png" alt="Rey Dau"><span>Rey Dau</span></a>
+                    <a class="monster-card" href="#arkveld"><img src="imagenes/Arkveld_icon.png" alt="Arkveld"><span>Arkveld</span></a>
+                </div>
+            </section>
+            <section id="panel-pajaro" class="tab-panel" aria-label="Wyverns pájaro">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#gypceros"><img src="imagenes/Gypceros_Icon.png" alt="Gypceros"><span>Gypceros</span></a>
+                    <a class="monster-card" href="#yian-kut-ku"><img src="imagenes/Kut-Ku_Icon.png" alt="Yian kut-ku"><span>Yian kut-ku</span></a>
+                </div>
+            </section>
+            <section id="panel-bruto" class="tab-panel" aria-label="Wyverns brutos">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#rompopolo"><img src="imagenes/Rompopolo_icon.png" alt="Rompopolo"><span>Rompopolo</span></a>
+                    <a class="monster-card" href="#quematrice"><img src="imagenes/Quematrice_Icon.png" alt="Quematrice"><span>Quematrice</span></a>
+                </div>
+            </section>
+            <section id="panel-colmillos" class="tab-panel" aria-label="Bestias de colmillos">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#blangonga"><img src="imagenes/Blangonga.png" alt="Blangonga"><span>Blangonga</span></a>
+                    <a class="monster-card" href="#congalala"><img src="imagenes/Congalala_icon.png" alt="Congalala"><span>Congalala</span></a>
+                    <a class="monster-card" href="#ajarakan"><img src="imagenes/Ajarakan_icon.png" alt="Ajarakan"><span>Ajarakan</span></a>
+                    <a class="monster-card" href="#doshaguma"><img src="imagenes/Doshaguma_Icon.png" alt="Doshaguma"><span>Doshaguma</span></a>
+                </div>
+            </section>
+            <section id="panel-leviatan" class="tab-panel" aria-label="Leviatanes">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#uth-duna"><img src="imagenes/Uth_Duna_Icon.png" alt="Uth Duna"><span>Uth Duna</span></a>
+                    <a class="monster-card" href="#lagiacrus"><img src="imagenes/Lagiacrus_icon.png" alt="Lagiacrus"><span>Lagiacrus</span></a>
+                    <a class="monster-card" href="#jin-dahaad"><img src="imagenes/Dahaad_icon.png" alt="Jin Dahaad"><span>Jin Dahaad</span></a>
+                    <a class="monster-card" href="#mizutsune"><img src="imagenes/Mizutsune_icon.png" alt="Mizutsune"><span>Mizutsune</span></a>
+                    <a class="monster-card" href="#balahara"><img src="imagenes/Balahara_icon.png" alt="Balahara"><span>Balahara</span></a>
+                    <a class="monster-card" href="#hirabami"><img src="imagenes/Hirabami_Icon.png" alt="Hirabami"><span>Hirabami</span></a>
+                </div>
+            </section>
+            <section id="panel-temnoceran" class="tab-panel" aria-label="Temnoceran">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#nerscylla"><img src="imagenes/Nerscylla.png" alt="Nerscylla"><span>Nerscylla</span></a>
+                    <a class="monster-card" href="#lala-barina"><img src="imagenes/lala_barina_icon.png" alt="Lala Barina"><span>Lala Barina</span></a>
+                </div>
+            </section>
+            <section id="panel-anfibio" class="tab-panel" aria-label="Anfibios">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#chatacabra"><img src="imagenes/Chatacabra_icon.png" alt="Chatacabra"><span>Chatacabra</span></a>
+                </div>
+            </section>
+            <section id="panel-cefalopodo" class="tab-panel" aria-label="Cefalópodos">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#nu-udra"><img src="imagenes/Nu_Udra_icon.png" alt="Nu Udra"><span>Nu Udra</span></a>
+                    <a class="monster-card" href="#xu-wu"><img src="imagenes/Xu_Wu_icon.png" alt="Xu Wu"><span>Xu Wu</span></a>
+                </div>
+            </section>
+            <section id="panel-constructo" class="tab-panel" aria-label="Constructos">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#anjanath-fulgureo-guardian"><img src="imagenes/Guardian_Fulgur_Anjanath_Icon.png" alt="Anjanath Fulgúreo Guardián"><span>Anjanath Fulgúreo Guardián</span></a>
+                    <a class="monster-card" href="#odogaron-ebano-guardian"><img src="imagenes/Odogaron_Icon.png" alt="Odogaron Ébano Guardián"><span>Odogaron Ébano Guardián</span></a>
+                    <a class="monster-card" href="#doshaguma-guardian"><img src="imagenes/Guardian_Doshaguma_Icon.png" alt="Doshaguma Guardián"><span>Doshaguma Guardián</span></a>
+                    <a class="monster-card" href="#rathalos-guardian"><img src="imagenes/Guardian_Rathalos_Icon.png" alt="Rathalos Guardián"><span>Rathalos Guardián</span></a>
+                    <a class="monster-card" href="#arkveld-guardian"><img src="imagenes/Arkveld_Guardian_Icon.png" alt="Arkveld Guardián"><span>Arkveld Guardián</span></a>
+                    <a class="monster-card" href="#zoh-shia"><img src="imagenes/Zoh_Shia_Icon.png" alt="Zoh Shia"><span>Zoh Shia</span></a>
+                </div>
+            </section>
+            <section id="panel-anciano" class="tab-panel" aria-label="Dragones ancianos">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#gogmazios"><img src="imagenes/Gogmazios_Icon.png" alt="Gogmazios"><span>Gogmazios</span></a>
+                </div>
+            </section>
+            <section id="panel-otros" class="tab-panel" aria-label="???">
+                <div class="monster-grid">
+                    <a class="monster-card" href="#gore-magala"><img src="imagenes/Gore_Magala_icon.png" alt="Gore Magala"><span>Gore Magala</span></a>
+                    <a class="monster-card" href="#omega-planetes"><img src="imagenes/Omega_Planetes_Icon.png" alt="Omega Planetes"><span>Omega Planetes</span></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="rathalos" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Rathalo.png" alt="Rathalos">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern volador</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Rathalos</h2>
+                <p>El "Rey de los cielos". Junto con las Rathian, acechan amplios territorios cerca de sus nidos. Los Rathalos descienden sobre los invasores desde el cielo, atacando con veneno, garras y fuego. </p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="rathian" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Rathian.png" alt="Rathian">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern volador</p>
+                <p class="detail-tag">Hostilidad: ★★★★</p>
+                <h2>Rathian</h2>
+                <p>La "Reina de la tierra". Estas depredadoras terrestres tienen poderosas patas y colas venenosas. Cuando cazan juntos, las Rathian y los Rathalos cooperan de maravilla.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="seregios" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Seregios.png" alt="Seregios">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern volador</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Seregios</h2>
+                <p>Grandes Wyverns voladores con escamas afiladas como cuchillas que cubren su cuerpo. Los Seregios son conocidos por su carácter extremadamente territorial y belicoso, y por hacer uso de su movilidad aérea y sus potentes patas traseras en intensos combates contra otros grandes monstruos. Se han avistado Seregios arrojando escamas de su cuerpo, lo que inflige el estado de sangrado a sus víctimas.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="gravios" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Gravios.png" alt="Gravios">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern volador</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Gravios</h2>
+                <p>Wyverns grandes que se hallan en zonas volcánicas. Tienen un feroz ataque de aliento ardiente y pueden emitir un gas adormecedor. Sus caparazones óseos son muy duros, pero dejan expuesto un interior frágil.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="blangonga" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Blangonga.png" alt="Blangonga">
+            <div class="detail-info">
+                <p class="detail-tag">Bestia de Colmillos</p>
+                <p class="detail-tag">Hostilidad: ★★★★</p>
+                <h2>Blangonga</h2>
+                <p>Líder de una manada de Blango, es dos veces más grande que ellos y se le reconoce por sus grandes garras y su flamante bigote. Enviará a la manada a atacar al invasor. Su gran capacidad de salto le es muy útil para desplazarse por su hábitat en las Cimas Árticas.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="nerscylla" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Nerscylla.png" alt="Nerscylla">
+            <div class="detail-info">
+                <p class="detail-tag">Temnoceran</p>
+                <p class="detail-tag">Hostilidad: ★★★★</p>
+                <h2>Nerscylla</h2>
+                <p>Un Temnoceran que teje redes para defender su territorio y cazar. Debilitan a sus presas, las inmovilizan y devoran con sus grandes mandíbulas. También les gusta cubrirse con pieles de los Gypceros que consumen.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="uth-duna" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Uth_Duna_Icon.png" alt="Uth Duna">
+            <div class="detail-info">
+                <p class="detail-tag">Leviatán</p>
+                <p class="detail-tag">Hostilidad: ★★★★★★</p>
+                <h2>Uth Duna</h2>
+                <p>Leviatán que ejerce su supremacía en el ecosistema del Bosque Escarlata. Se ha adaptado a entornos con mucha agua y suele aparecer durante el aguacero. Al combinarse con agua, las secreciones del Uth Duna forman un velo protector que no solo absorbe los golpes, sino que le añade peso. El monstruo lo usa para golpear con tanta fuerza que puede erradicar las amenazas con la onda resultante.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="lala-barina" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/lala_barina_icon.png" alt="Lala Barina">
+            <div class="detail-info">
+                <p class="detail-tag">Temnoceran</p>
+                <p class="detail-tag">Hostilidad: ★★★★</p>
+                <h2>Lala Barina</h2>
+                <p>Temnoceran autóctonos del Bosque Escarlata. Realizan piruetas características y sus fluidos corporales contienen un agente neurálgico que, combinado con agua, produce flósculos: una especie de cerdas rojizas en forma de pétalos en el abdomen. Si se alteran, los Lala Barina abren estas cerdas como si se tratase de flores letales y con ellas paralizan todo lo que toquen.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="gore-magala" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Gore_Magala_icon.png" alt="Gore Magala">
+            <div class="detail-info">
+                <p class="detail-tag">???</p>
+                <p class="detail-tag">Hostilidad: ★★★★★★★</p>
+                <h2>Gore Magala</h2>
+                <p>Monstruos que se envuelven en sus grandes alas, como un manto negro. Carecen de órganos sensoriales oculares, por lo que utilizan las finas escamas que se extienden desde sus alas para localizar a sus presas. Cuando su capacidad sensorial aumenta, aparecen antenas en sus cabezas y despliegan sus alas, entrando en un agresivo estado de frenesí. Sus escamas negras también pueden provocar el frenesí de otras criaturas.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="lagiacrus" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Lagiacrus_icon.png" alt="Lagiacrus">
+            <div class="detail-info">
+                <p class="detail-tag">Leviatán</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Lagiacrus</h2>
+                <p>Leviatanes que están en la cima de la cadena alimenticia acuática. Temidos por los marineros, y conocidos como "Señores de los Mares", los Lagiacrus almacenan suficiente electricidad como para sobrecargar los océanos. A veces los verás descansando en tierra.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="congalala" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Congalala_icon.png" alt="Congalala">
+            <div class="detail-info">
+                <p class="detail-tag">Bestia de Colmillos</p>
+                <p class="detail-tag">Hostilidad: ★★★★</p>
+                <h2>Congalala</h2>
+                <p>Gran bestia de largos colmillos y pelaje rosado que se encuentra en regiones templadas y húmedas. Comedores habituales de setas, los Congalala cuentan con veneno o aliento flamígero, según los tipos de setas que abunden en su hábitat.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="jin-dahaad" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Dahaad_icon.png" alt="Jin Dahaad">
+            <div class="detail-info">
+                <p class="detail-tag">Leviatán</p>
+                <p class="detail-tag">Hostilidad: Extremadamente alta</p>
+                <h2>Jin Dahaad</h2>
+                <p>Un leviatán que está en la cima del ecosistema de los Acantilados del Témpano. Mantiene toda su envergadura a baja temperatura a través de las crestas refrigerantes de su cuerpo. La escarcha de sus patas funciona como arma poderosa y método para desplazarse por muros y rocas flotantes.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="mizutsune" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Mizutsune_icon.png" alt="Mizutsune">
+            <div class="detail-info">
+                <p class="detail-tag">Leviatán</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Mizutsune</h2>
+                <p>Un leviatán evolucionado con un flexible y alisado cuerpo. El Mizutsune segrega una peculiar espuma que cubre a sus enemigos con una especie de burbujas inmovilizadoras. Una vez que la víctima está incapacitada, se acerca a ella danzando.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="ajarakan" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Ajarakan_icon.png" alt="Ajarakan">
+            <div class="detail-info">
+                <p class="detail-tag">Bestia de Colmillos</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Ajarakan</h2>
+                <p>Bestias de colmillos con una coraza inconfundible que protege por completo su lomo. Adhieren metal fundido a sus cuerpos y a continuación se frotan para generar calor suficiente para provocar explosiones e incluso fundir el suelo y los proyectiles. Además, sus extremidades anteriores les permiten desplazarse por el techo, así que nunca hay que perder de vista las alturas.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="nu-udra" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Nu_Udra_icon.png" alt="Nu Udra">
+            <div class="detail-info">
+                <p class="detail-tag">Cefalópodo</p>
+                <p class="detail-tag">Hostilidad: ★★★★★★</p>
+                <h2>Nu Udra</h2>
+                <p>Cefalópodo que ejerce su supremacía en el ecosistema de la Cuenca Oleosa. Suele estar recubierto de un fango oleoso al que prende fuego cuando se altera, transformándose en una bestia flamígera. Los óculos que aparecen en su cuerpo y los muchos tentáculos podrían ser órganos sensoriales, pero aún no se ha demostrado.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="rompopolo" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Rompopolo_icon.png" alt="Rompopolo">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern bruto</p>
+                <p class="detail-tag">Hostilidad: ★★★★</p>
+                <h2>Rompopolo</h2>
+                <p>Wyverns brutales moteados oriundos de la Cuenca Oleosa. Se sirven de sus colas para inyectar gas en la tierra y provocar explosiones, para así poder alimentarse de las pequeñas criaturas que salen a la superficie. El gas tóxico que expulsa su lengua les permite debilitar a sus presas, a las que apuntillan con más explosiones. Los Rompopolo son altamente territoriales, y no dudan en enfrentarse entre sí.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="rey-dau" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Rey_Dau_icon.png" alt="Rey Dau">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern volador</p>
+                <p class="detail-tag">Hostilidad: ★★★★★★</p>
+                <h2>Rey Dau</h2>
+                <p>Wyvern volador que ejerce su supremacía en el ecosistema de los Llanos Ventosos. Logró adaptarse a la marea de arena, por lo que suele aparecer en medio de ella, y puede almacenar, amplificar y descargar poderosos rayos de tormenta con un efecto devastador. El Rey Dau es muy territorial y ataca a quien tenga delante de sus ojos. La fulgorita contra su caparazón emite un sonido que pone en guardia a todos los monstruos en la región.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="xu-wu" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Xu_Wu_icon.png" alt="Xu Wu">
+            <div class="detail-info">
+                <p class="detail-tag">Cefalópodo</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Xu Wu</h2>
+                <p>Depredadores cefalópodos entre cuyas presas se incluyen grandes Guardianes. La mucosidad que secretan sus tentáculos se endurece muy rápido y se vuelve afilada como cuchillas, de ahí que llamen al Xu Wu el "asesino perforador". Las enormes fauces ocultas en la parte inferior le permiten devorar a presas muy grandes.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="arkveld" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Arkveld_icon.png" alt="Arkveld">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern volador</p>
+                <p class="detail-tag">Hostilidad: ★★★★★★★</p>
+                <h2>Arkveld</h2>
+                <p>De acuerdo con los registros dejados por el gremio, este wyvern volador se considera extinguido. Sus alas poseen unas cuchillas como cadenas que pueden extender y retraer a su antojo para rajar a sus presas. También se alimentan de la energía elemental que absorben con los cadenáculos y pueden convertirla en energía para lanzar ataques.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="chatacabra" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Chatacabra_icon.png" alt="Chatacabra">
+            <div class="detail-info">
+                <p class="detail-tag">Anfibio</p>
+                <p class="detail-tag">Hostilidad: ★★★</p>
+                <h2>Chatacabra</h2>
+                <p>Anfibios que usan sus largas lenguas para atacar y devorar a presas como los Bulaqchi. Sus desarrolladas extremidades delanteras almacenan una substancia mucosa pegajosa. Si se alteran, los Chatacabra frotan sus extremidades contra el suelo para recolectar rocas y minerales, lo que aumenta el alcance y la potencia de sus golpes.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="balahara" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Balahara_icon.png" alt="Balahara">
+            <div class="detail-info">
+                <p class="detail-tag">Leviatán</p>
+                <p class="detail-tag">Hostilidad: ★★★★</p>
+                <h2>Balahara</h2>
+                <p>Leviatanes moradores del desierto con caparazones formados con la fulgorita que crean los rayos. Con su esqueleto flexible y su cuerpo serpenteante crean trampas de arenas movedizas para las presas incautas. Su boca contiene órganos sensoriales parecidos a ojos que secretan una mucosa con bacterias luminiscentes. Gracias a ella, se ve potenciada su visibilidad bajo tierra y durante las tormentas de arena.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="quematrice" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Quematrice_Icon.png" alt="Quematrice">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern bruto</p>
+                <p class="detail-tag">Hostilidad: ★★★★</p>
+                <h2>Quematrice</h2>
+                <p>Wyverns brutales con colas de proporciones extraordinarias. Expelen una sustancia inflamable que se vaporiza rápidamente, a la cual prenden fuego al arrastrar la cola por el suelo. El Quematrice no suele cazar sus propias presas, por lo que suele alimentarse de cadáveres de herbívoros abandonados por otros depredadores. Esto suele derivar en enfrentamientos con otros carnívoros de menor tamaño.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="doshaguma" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Doshaguma_Icon.png" alt="Doshaguma">
+            <div class="detail-info">
+                <p class="detail-tag">Bestia de Colmillos</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Doshaguma</h2>
+                <p>Bestias de colmillos, robustas y territoriales, pueden mostrar un comportamiento agresivo y tienen un territorio amplio. A veces se las ha visto en grandes manadas.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="gypceros" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Gypceros_Icon.png" alt="Gypceros">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern pajaro</p>
+                <p class="detail-tag">Hostilidad: ★★★</p>
+                <h2>Gypceros</h2>
+                <p>Wyverns capaces de emitir fogonazos de luz con sus prominentes crestas, desorientado así al enemigo. Su pellejo elástico es resistente a impactos de armas contundentes, y hace a las trampas de choque poco efectivas. Su saliva venenosa se derrama por las pendientes.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="hirabami" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Hirabami_Icon.png" alt="Hirabami">
+            <div class="detail-info">
+                <p class="detail-tag">Leviatán</p>
+                <p class="detail-tag">Hostilidad: ★★★★</p>
+                <h2>Hirabami</h2>
+                <p>Leviatanes de los Acantilados del Témpano. Tienen colas afiladas como pinzas y membranas peculiares en el cuello, por las que recogen el aire y se mantienen a flote. A veces se puede ver a los Hirabami en grupo sobre los acantilados, usando las escamas o garras delanteras para agarrarse de muros o techos mientras duermen.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="yian-kut-ku" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Kut-Ku_Icon.png" alt="Yian kut-ku">
+            <div class="detail-info">
+                <p class="detail-tag">Wyvern pajaro</p>
+                <p class="detail-tag">Hostilidad: ★★★</p>
+                <h2>Yian kut-ku</h2>
+                <p>Wyvern pájaro de pico imponente y enormes orejas. Suelen ser asustadizos, pero a veces atacan a la más mínima señal de amenaza. Durante la estación de bonanza del Bosque Escarlata, los Yian Kut-Ku se reúnen en grandes grupos. La ausencia de huevos y crías sugiere que este comportamiento no tiene ningún fin reproductivo, sino más bien de relación y alimentación.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="anjanath-fulgureo-guardian" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Guardian_Fulgur_Anjanath_Icon.png" alt="Anjanath Fulgúreo Guardián">
+            <div class="detail-info">
+                <p class="detail-tag">Constructo</p>
+                <h2>Anjanath Fulgúreo Guardián</h2>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <p>Una especie de monstruos artificiales creada por una civilización ancestral, e imbuida con energía de Anjanath Fulgúreo. El Anjanath Fulgúreo Guardián ni se reproduce ni necesita alimento, por lo que subsiste con leche de wyvern. Puede usar los rayos de su cuerpo para atacar, pero también para potenciarse e infligir mordiscos devastadores</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="odogaron-ebano-guardian" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Odogaron_Icon.png" alt="Odogaron Ébano Guardián">
+            <div class="detail-info">
+                <p class="detail-tag">Constructo</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Odogaron Ébano Guardián</h2>
+                <p>Una especie de monstruos artificiales creada por una civilización ancestral, e imbuida con energía de Odogaron Ébano. El Odogaron Ébano Guardián ni se reproduce ni necesita alimento, por lo que subsiste con leche de wyvern. Tratará de arrinconar a sus objetivos con ráfagas de ataques utilizando su cola y garras bien desarrolladas.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="doshaguma-guardian" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Guardian_Doshaguma_Icon.png" alt="Doshaguma Guardián">
+            <div class="detail-info">
+                <p class="detail-tag">Constructo</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Doshaguma Guardián</h2>
+                <p>Una especie de monstruos artificiales creada por una civilización ancestral con la energía de un Doshaguma. El Doshaguma Guardián no se reproduce y no necesita alimento, por lo que subsiste con leche de wyvern. No son para nada ágiles, pero sí lo bastante duros como para cargar a través de los ataques sin inmutarse, lo que los hace increíblemente peligrosos.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="rathalos-guardian" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Guardian_Rathalos_Icon.png" alt="Rathalos Guardián">
+            <div class="detail-info">
+                <p class="detail-tag">Constructo</p>
+                <p class="detail-tag">Hostilidad: ★★★★★</p>
+                <h2>Rathalos Guardián</h2>
+                <p>Una especie de monstruos artificiales creada por una civilización ancestral con la energía de un Rathalos. El Rathalos Guardián no se reproduce y no necesita alimento, por lo que subsiste con leche de wyvern. Como el Rathalos original, son voladores natos y atacan usando sus garras con más violencia desde el aire.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="arkveld-guardian" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Arkveld_Guardian_Icon.png" alt="Arkveld Guardián">
+            <div class="detail-info">
+                <p class="detail-tag">Constructo</p>
+                <p class="detail-tag">Hostilidad: ★★★★★★★</p>
+                <h2>Arkveld Guardián</h2>
+                <p>Una especie artificial creada por una civilización ancestral, e imbuida con energía de un monstruo llamado Arkveld. Ni se reproduce ni necesita alimento, por lo que subsiste con leche de wyvern. Además de absorber y liberar energía igual que otros Guardianes, el Arkveld Guardián también puede absorber energía elemental a través de los cadenáculos de sus alas y usarla como sustento.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="zoh-shia" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Zoh_Shia_Icon.png" alt="Zoh Shia">
+            <div class="detail-info">
+                <p class="detail-tag">Constructo</p>
+                <p class="detail-tag">Hostilidad: Extremadamente peligroso</p>
+                <h2>Zoh Shia</h2>
+                <p>Un Guardián creado para salvar a Wyveria. Su cuerpo está revestido de leche de wyvern cristalizada, lo que le permite regenerarse. El Zoh Shia, al igual que otros Guardianes, destaca por sus ataques de energía y provoca explosiones continuas para cristalizar toda la zona. Bajo su manto blanco de Guardián, su cuerpo palpita energía oscura, la cual podrás observar si revela todo su poder ancestral.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="gogmazios" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Gogmazios_Icon.png" alt="Gogmazios">
+            <div class="detail-info">
+                <p class="detail-tag">Dragón anciano</p>
+                <p class="detail-tag">Hostilidad: Extremadamente peligroso</p>
+                <h2>Gogmazios</h2>
+                <p>Impregnado de un fluido pegajoso, a este gigantesco dragón anciano no parece pesarle el Matadragones de su lomo. Los testigos afirman que, a pesar de su gran tamaño, esta misteriosa bestia es capaz de alzar el vuelo.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div id="omega-planetes" class="monster-detail">
+        <article class="detail-card">
+            <img src="imagenes/Omega_Planetes_Icon.png" alt="Omega Planetes">
+            <div class="detail-info">
+                <p class="detail-tag">???</p>
+                <p class="detail-tag">Hostilidad: Extremadamente peligroso</p>
+                <h2>Omega Planetes</h2>
+                <p>Un armazón Omega que ha cruzado la grieta interdimensional hasta las Tierras Prohibidas en busca de formas de vida y planetas que invadir. Conocido como Omega Planetes para distinguirse de otros armazones Omega, pretende estudiar los monstruos de las Tierras Prohibidas para evolucionar y subyugar todo a su paso.</p>
+                <a href="#bestiario" class="volver">Volver al bestiario</a>
+            </div>
+        </article>
+    </div>
+    <div class="tab-panels">
+        <a href="aviso-legal.html" class="aviso">Avisos legales</a> 
+        <a href="https://monsterhunter.fandom.com/es/wiki/MHWilds:_Monstruos" class="aviso">Enlaces externos</a>
+        <a href="https://www.bing.com/videos/riverview/relatedvideo?q=documental+monster+hunter+wilds&&mid=B3201C032C4309713165B3201C032C4309713165&churl=https%3a%2f%2fwww.youtube.com%2fchannel%2fUCweDKPSF65wRw5VHFUJYiow&FORM=VRDGAR" class="aviso">Videos Referenciales</a> 
+    </div>
+</body>
+</html>
